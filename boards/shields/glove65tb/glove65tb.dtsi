@@ -115,8 +115,9 @@
         compatible = "alps,ec11";
         a-gpios = <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <24>;
-        status = "okay";
+        resolution = <4>;
+        steps = <40>;
+        status = "disabled";
     };
 
     right_encoder: encoder_right {
@@ -126,7 +127,6 @@
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder &right_encoder>;
-        triggers-per-rotation = <24>;
     };
 
     trackball_listener: trackball_listener {
