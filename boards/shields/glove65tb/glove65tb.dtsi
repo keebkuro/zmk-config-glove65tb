@@ -126,7 +126,7 @@
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder &right_encoder>;
-        triggers-per-rotation = <4>;
+        triggers-per-rotation = <24>;
     };
 
     trackball_listener: trackball_listener {
