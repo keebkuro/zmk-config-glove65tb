@@ -42,6 +42,9 @@
         tap-ms = <30>;
     };
 
+    behaviors {
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -55,7 +58,7 @@
 &mo 2             &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &mkp LCLK  &kp SPACE  &kp SPACE         &mo 3                               &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         number_layer {
